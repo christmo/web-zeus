@@ -1,0 +1,76 @@
+/* 
+    Document   : estilo
+    Created on : 10/12/2012, 12:28:55 AM
+    Author     : christmo
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+nav
+{
+    background: rgba(60,60,180,0.8);
+    bottom: 0;
+    color: #EEE;
+    font-size: 1em;
+    left: 0;
+    padding: 0.2em 0;
+    /*position: absolute;*/
+    width: 100%;
+    /*z-index: 3000;*/
+}
+nav ul 
+{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+}
+nav li
+{
+    display: inline-block;
+}
+nav li a
+{
+    background: #D23D15;
+    border-radius: 0.5em;
+    color: white;
+    display: inline-block;
+    margin: 0 1em 0 0;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+nav li a:hover
+{
+    background: #fff;
+    color: black;
+    transform: scale(1.2) rotate(-5deg);
+}
+
+#content{
+    width: 100%;
+    height: 93%;
+}
+
+#map {
+    display: inline-block;
+    vertical-align: top;
+    width: 75%;
+    height: 100%;
+        padding: 0;
+    margin: 0;
+}
+
+
+#search{
+    display: inline-block;
+    vertical-align: top;
+    width: 25%;
+    height: 100%;
+        padding: 0;
+    margin: 0;
+}
+
+#search{
+    background-color: #ff0;
+}
