@@ -1,0 +1,16 @@
+<!DOCTYPE dwr PUBLIC
+    "-//GetAhead Limited//DTD Direct Web Remoting 3.0//EN"
+    "http://getahead.org/dwr/dwr30.dtd">
+
+<dwr>
+    <allow>
+        <!-- define la clase de servicios que se va a publicar mediante DWR -->
+        <!-- defines the service class to share across DWR -->
+        <create creator="new" javascript="SitesWS">
+            <param name="class" value="com.zeus.ws.test.SitesWS"/>
+        </create>
+        <!-- define las clases de datos que utiliza el servicio -->
+        <!-- defines the data classes to share across DWR -->
+        <convert converter="bean" match="com.zeus.ws.pojo.*"/>
+    </allow>
+</dwr>

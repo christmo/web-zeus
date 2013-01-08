@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html">
+    <h:head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta charset="utf-8"/>
+        <title>Mapa Interactivo de Búsqueda</title>
+        <!--<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css"/>-->
+        <link rel="stylesheet" href="resources/css/normalize.css?modified=1234567890" />
+        <link rel="stylesheet" href="resources/css/style.mobile.css?modified=1234567890" />
+        <link rel="stylesheet" href="resources/css/style.mobile-jq.css?modified=1234567890" />
+        <link rel="stylesheet" href="resources/css/estilo.css?modified=1234567890" />
+        <script src="resources/js/lab/LAB-debug.min.js"/>
+        <script>
+            $LAB
+            .setGlobalDefaults({Debug:true})
+            .script('/zeus-war/dwr/engine.js?modified=1234567890').wait()
+            .script('/zeus-war/dwr/interface/SitesWS.js?modified=1234567890');
+            $LAB
+            .setGlobalDefaults({AlwaysPreserveOrder:true,Debug:true})
+            .script("resources/js/OpenLayers_1.js?modified=1234567890")
+            .script("resources/js/mobile-base.js?modified=1234567890")
+            .script("http://code.jquery.com/jquery.min.js").wait(
+            function(){
+             $(document).on("ready",inicio);   
+            })
+            ;
+        </script>
+        <!--<script src="http://code.jquery.com/jquery.min.js"/>-->
+        <!--<script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>-->
+        <!--<script src="resources/js/OpenLayers_1.js"/>-->
+        <!--<script src="resources/js/hammer/hammer.js"></script>-->
+        <!--<script src="resources/js/hammer/jquery.specialevent.hammer.js"></script>-->
+
+        <!--<script src="resources/js/mobile-base.js" />-->
+        <!--<script src='/zeus-war/dwr/engine.js'></script>-->
+        <!--<script src='/zeus-war/dwr/interface/SitesWS.js'></script>-->
+        <!--<script src="resources/js/mobile-jq.js" />-->
+    </h:head>
+    <h:body>
+        <header>
+            <nav class="menu">
+                <ul >
+                    <li><a id="a" href="#">Inicio</a></li>
+                    <li><a id="b" href="#">Mapa</a></li>
+                    <li><a id="c" href="#">Login</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="content">
+            <article id="map">
+                <!--<a href="#">test</a>-->
+            </article><article id="search">
+                asd
+            </article>
+        </section>
+    </h:body>
+</html>
+
